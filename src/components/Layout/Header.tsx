@@ -7,11 +7,11 @@ const Header = () => {
   return (
     <Fragment>
       <Navbar />
-      <Container styles={"w-[100%] h-[25rem] z-0 overflow-hidden"}>
+      <Container className="z-0 h-[25rem] w-[100%] overflow-hidden">
         <Image
           src="/src/assets/header-img.jpg"
           alt="restaurant brand image - khao piyo"
-          styles={"w-[110%] h-[100%] cover"}
+          className="cover h-[100%] w-[110%]"
         />
       </Container>
     </Fragment>

@@ -1,15 +1,12 @@
-import React from "react";
+import React, { ComponentProps } from "react";
+import { twMerge } from "tailwind-merge";
 
-const Image = ({
-  src,
-  alt,
-  styles
-}: {
-  src: string;
-  alt: string;
-  styles: string;
-}) => {
-  return <img src={src} alt={alt} className={styles} />;
+type PropTypes = {
+  className?: string;
+} & ComponentProps<"img">;
+
+const Image = ({ className, ...restProps }: PropTypes) => {
+  return <img className={twMerge("", className)} {...restProps} />;
 };
 
 export default Image;
