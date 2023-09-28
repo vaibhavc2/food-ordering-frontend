@@ -1,7 +1,8 @@
 import React from "react";
+import HomeImageContainer from "../Layout/HomeImageContainer";
 
 const Home = () => {
-  return <div>Home</div>;
+  return <HomeImageContainer />;
 };
 
 export default Home;

@@ -1,16 +1,16 @@
 import React, { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
-const Container = ({
+const Heading = ({
   children,
   className,
   ...restProps
-}: ComponentProps<"div">) => {
+}: ComponentProps<"h1">) => {
   return (
-    <div className={twMerge("", className)} {...restProps}>
+    <h1 className={twMerge("text-2xl font-bold", className)} {...restProps}>
       {children}
-    </div>
+    </h1>
   );
 };
 
-export default Container;
+export default Heading;
