@@ -7,7 +7,7 @@ import HeaderCartButton from "./HeaderCartButton";
 const HeaderNavbar = () => {
   return (
     <Navbar className="fixed left-0 top-0 z-10 flex h-20 w-full items-center justify-between bg-red-800 px-5 text-white shadow sm:px-[10%]">
-      <Heading className="">Khao-Piyo</Heading>
+      <Heading className="cursor-pointer lg:text-3xl">Khao-Piyo</Heading>
       <HeaderCartButton />
     </Navbar>
   );

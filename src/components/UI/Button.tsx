@@ -9,7 +9,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className={twMerge("rounded-xl border border-white p-2", className)}
+      className={twMerge("rounded-xl border p-2", className)}
       {...restProps}
     >
       {children}
