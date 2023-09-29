@@ -17,7 +17,7 @@ const AvailableMeals = () => {
   ));
 
   return (
-    <section className={`${meals} mt-20`}>
+    <section className={`${meals} lg:mt-20`}>
       <Card>
         <ul>{mealsList}</ul>
       </Card>
